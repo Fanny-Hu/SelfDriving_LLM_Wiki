@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="自動駕駛技術知識百科，介紹 AI、YOLO、Camera、LiDAR、Radar 與自動駕駛技術。">
+  <title>自動駕駛技術知識百科</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", Arial, sans-serif;
+      color: #eaf6ff;
+      background:
+        radial-gradient(circle at top right, #123c65, transparent 40%),
+        linear-gradient(135deg, #061326, #0a1d35 55%, #06101f);
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 75px 20px 55px;
+      border-bottom: 1px solid #1d5279;
+    }
+
+    header h1 {
+      color: #5cddff;
+      font-size: clamp(30px, 5vw, 48px);
+      text-shadow: 0 0 18px #008cff;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      color: #c2d9ed;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #65e4ff;
+      border: 1px solid #2587b9;
+      border-radius: 30px;
+      padding: 8px 18px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 40px 20px 70px;
+    }
+
+    h2 {
+      color: #66dfff;
+      border-left: 4px solid #21c8ff;
+      padding-left: 14px;
+      margin: 35px 0 20px;
+    }
+
+    .intro {
+      background: rgba(18, 48, 76, 0.8);
+      border: 1px solid #245477;
+      border-radius: 15px;
+      padding: 25px;
+      line-height: 2;
+      color: #d4e8f8;
+    }
+
+    .chapters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .chapter {
+      display: block;
+      text-decoration: none;
+      color: #eaf6ff;
+      background: linear-gradient(145deg, #102b48, #0b1d32);
+      border: 1px solid #245477;
+      border-radius: 13px;
+      padding: 22px;
+      transition: 0.25s;
+    }
+
+    .chapter:hover {
+      transform: translateY(-5px);
+      border-color: #42d9ff;
+      box-shadow: 0 0 20px rgba(0, 180, 255, 0.25);
+    }
+
+    .chapter span {
+      display: block;
+      color: #55d9ff;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .chapter strong {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .chapter p {
+      color: #a9c5dc;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .readme {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 24px;
+      color: #061326;
+      background: #58dcff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .readme:hover {
+      background: #a0efff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8ba9c3;
+      border-top: 1px solid #1d5279;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="tag">AUTONOMOUS DRIVING TECHNOLOGY</div>
+  <h1>自動駕駛技術知識百科</h1>
+  <p>Autonomous Driving Tech Wiki</p>
+  <p>從人工智慧到智慧感測器，探索自動駕駛的核心技術。</p>
+</header>
+
+<main>
+
+  <h2>專案介紹</h2>
+
+  <div class="intro">
+    本知識百科以自動駕駛技術為主題，透過 LLM 協助整理技術資料，
+    建立繁體中文技術知識庫。內容涵蓋自動駕駛基本原理、
+    AI 人工智慧、影像辨識、感測器技術、感測器融合、
+    路徑規劃、車輛控制及自動煞車安全等主題。
+    <br>
+    希望透過系統化的章節整理，讓讀者逐步了解自動駕駛車輛的運作方式。
+  </div>
+
+  <h2>知識百科章節</h2>
+
+  <div class="chapters">
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/01_%E8%87%AA%E5%8B%95%E9%A7%95%E9%A7%9B%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E8%88%87%E7%99%BC%E5%B1%95%E6%AD%B7%E5%8F%B2.md">
+      <span>CHAPTER 01</span>
+      <strong>自動駕駛基本原理與發展歷史</strong>
+      <p>認識自動駕駛的基本架構、運作原理與發展歷程。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/02_SAE_L0_L5%E8%87%AA%E5%8B%95%E9%A7%95%E9%A7%9B%E5%88%86%E7%B4%9A.md">
+      <span>CHAPTER 02</span>
+      <strong>SAE L0～L5 自動駕駛分級</strong>
+      <p>了解不同自動駕駛等級的功能與駕駛責任。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/03_AI%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%88%87YOLO%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98.md">
+      <span>CHAPTER 03</span>
+      <strong>AI 人工智慧與 YOLO 影像辨識</strong>
+      <p>認識人工智慧、深度學習與即時物件偵測技術。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/04_Camera%E6%94%9D%E5%BD%B1%E6%A9%9F%E6%8A%80%E8%A1%93.md">
+      <span>CHAPTER 04</span>
+      <strong>Camera 攝影機技術</strong>
+      <p>了解攝影機成像原理、相機校正與影像應用。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/05_LiDAR%E5%85%89%E9%81%94%E6%8A%80%E8%A1%93.md">
+      <span>CHAPTER 05</span>
+      <strong>LiDAR 光達技術</strong>
+      <p>探索光達測距原理、點雲資料與定位技術。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/06_Radar%E9%9B%B7%E9%81%94%E6%8A%80%E8%A1%93%E8%88%87%E6%84%9F%E6%B8%AC%E5%99%A8%E8%9E%8D%E5%90%88.md">
+      <span>CHAPTER 06</span>
+      <strong>Radar 雷達技術與感測器融合</strong>
+      <p>了解雷達測距、速度偵測與多感測器融合。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/07_%E8%B7%AF%E5%BE%91%E8%A6%8F%E5%8A%83%E8%87%AA%E4%B8%BB%E6%B1%BA%E7%AD%96%E8%88%87%E8%BB%8A%E8%BC%9B%E6%8E%A7%E5%88%B6.md">
+      <span>CHAPTER 07</span>
+      <strong>路徑規劃、自主決策與車輛控制</strong>
+      <p>了解車輛如何選擇路線、做出決策並控制行駛。</p>
+    </a>
+
+    <a class="chapter" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/08_%E8%87%AA%E5%8B%95%E7%85%9E%E8%BB%8A%E5%AE%89%E5%85%A8%E8%88%87%E6%9C%AA%E4%BE%86%E6%87%89%E7%94%A8.md">
+      <span>CHAPTER 08</span>
+      <strong>自動煞車安全與未來應用</strong>
+      <p>認識自動緊急煞車、安全技術與未來發展。</p>
+    </a>
+
+  </div>
+
+  <a class="readme" href="https://github.com/Fanny-Hu/SelfDriving_LLM_Wiki/blob/main/README.md">
+    查看專案 README →
+  </a>
+
+</main>
+
+<footer>
+  自動駕駛技術知識百科 ｜ Autonomous Driving Tech Wiki
+  <br><br>
+  LLM Knowledge Project
+</footer>
+
+</body>
+</html>
